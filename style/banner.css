@@ -1,0 +1,25 @@
+/* banner */
+.banner {
+    display: flex;
+    align-items: center;
+    background-color: #fdefe6;
+  }
+
+  .content {
+    flex: 1;
+    padding-left: 20px;
+    
+  }
+
+  .content img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  section.banner h2{
+    text-align: justify;
+    padding: 20px 40px;
+    line-height: 1.8;
+  }
+
+ 

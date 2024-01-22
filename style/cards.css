@@ -1,0 +1,41 @@
+/* cards */
+
+/* Añade estas reglas CSS al estilo anterior */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Por defecto, una columna para dispositivos pequeños */
+    gap: 20px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  .cards-intro{
+    margin: auto;
+    padding: 10px 20px 50px 20px;
+    max-width: 60%;
+    text-align: center;
+    text-align: justify;
+}
+  
+  @media (min-width: 768px) {
+    .card-grid {
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas para dispositivos medianos */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .card-grid {
+      grid-template-columns: repeat(3, 1fr); /* Tres columnas para dispositivos grandes */
+    }
+    
+  }
+  

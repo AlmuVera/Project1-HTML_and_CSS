@@ -1,26 +1,72 @@
 /* banner */
-.banner {
-    display: flex;
-    align-items: center;
+
+  .grid-section {
     background-color: #fdefe6;
-  }
+}
 
-  .content {
-    flex: 1;
-    padding-left: 20px;
-    
-  }
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Por defecto, una columna para dispositivos pequeños */
+    grid-template-rows: auto auto; /* Dos filas por defecto */
+    gap: 20px;
+    width: 100%;
+    align-items: start;
+}
 
-  .content img {
-    max-width: 100%;
-    height: auto;
-  }
+.grid-item {
+    padding: 20px;
 
-  section.banner h2{
-    font-size: 24px;
-    text-align: justify;
-    padding: 20px 100px;
-    line-height: 1.8;
-  }
+}
 
+.grid-item img {
+  max-width: 100%; /* Asegura que la imagen no se desborde del ancho del contenedor */
+  max-height: 100%; /* Ajusta la altura de la imagen al 100% del contenedor */
+  height: auto; /* Permite que la altura se ajuste proporcionalmente al ancho */
+}
+.grid-item h1 {
+  margin: 0;
  
+}
+
+.wide-row {
+    grid-column: span 2; /* Ocupa dos columnas en dispositivos grandes */
+}
+.lg-view{
+  display:none;
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* Dos columnas para dispositivos grandes */
+    }
+    .lg-view{
+      display:inline-block;
+      font-size: 60px;
+   }
+   .sm-view{
+    display:none;
+ }
+   .grid-item img{
+    max-height: 50%;
+   }
+   
+}
+@media (min-width: 1024px) {
+  .banner-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lg-view{
+      display:inline-block;
+      font-size: 80px;
+
+   }
+  
+   .sm-view{
+      display:none;
+   }
+   
+   .grid-item h1 {
+    font-size: 80px; /* Tamaño original en 1024px y más */
+}
+
+}

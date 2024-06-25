@@ -27,14 +27,22 @@
   margin: 0;
  
 }
-
+.grid-quote{
+  padding: 60px 90px;
+  text-align: center;
+}
 .wide-row {
     grid-column: span 2; /* Ocupa dos columnas en dispositivos grandes */
 }
 .lg-view{
   display:none;
 }
+@media (max-width: 767px) {
+  .grid-item {
+    padding: 0 20px;
 
+}
+}
 @media (min-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr 1fr; /* Dos columnas para dispositivos grandes */

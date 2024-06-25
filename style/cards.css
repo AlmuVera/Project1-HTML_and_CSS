@@ -1,41 +1,49 @@
-/* cards */
 
-/* Añade estas reglas CSS al estilo anterior */
 
-.card-grid {
-    display: grid;
-    grid-template-columns: 1fr; /* Por defecto, una columna para dispositivos pequeños */
-    gap: 20px;
-  }
-  
-  .card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  .card img {
-    max-width: 100%;
-    height: auto;
-  }
-  .cards-intro{
-    margin: auto;
-    padding: 10px 20px 50px 20px;
-    max-width: 60%;
-    text-align: center;
-    text-align: justify;
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
 }
-  
-  @media (min-width: 768px) {
-    .card-grid {
-      grid-template-columns: repeat(2, 1fr); /* Dos columnas para dispositivos medianos */
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .card-grid {
-      grid-template-columns: repeat(3, 1fr); /* Tres columnas para dispositivos grandes */
-    }
-    
-  }
-  
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+.cards-intro{
+  padding: 10px 50px 10px 50px;
+}
+
+.card img {
+width: 100%; 
+height: 160px; 
+object-fit: cover; 
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2em;
+  margin: 0 0 10px;
+  color: #f08e80;
+  text-align: left;
+}
+
+.card-date {
+  color: #999;
+  font-size: 0.9em;
+  text-align: left;
+}
+.card-links{
+  text-decoration: none;
+  width: 100%;
+  text-align: left;
+}

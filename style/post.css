@@ -19,24 +19,27 @@ li{
     color: #f08e80;
     margin-top: 10px;
 }
-.back-btn{
+.back-btn {
+    display: inline-block;
     background-color: #f08e80;
     padding: 10px 30px;
     color: #fdeee6;
     border-radius: 5px;
     border-style: none;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    cursor: pointer; 
 }
+
 .back-btn:hover {
-    background-color: #fdeee6; 
-    color: #f08e80;
+    background-color: #e07b6a;
+    
 }
 .post-buttons{
     text-align: center;
-
 }
+    
 
 @media (min-width: 950px) {
     .post-ingredients{
@@ -88,4 +91,5 @@ li{
         text-align: center;
         font-size: 18px;
     }
+    
 }

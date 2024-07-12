@@ -1,0 +1,24 @@
+/* contact */
+.contact-section{
+    display: grid;
+    margin: auto;
+    max-width: 400px ;
+}
+.imput-contact-form{
+    padding: 10px 30px;
+}
+
+.contact-section button{
+    margin-bottom: 20px;
+}
+
+  
+.go-back-link{
+    color: #f08e80;
+    font-size: 16px;
+    text-decoration: none;
+}
+.go-back-link:hover{
+    color: #e07b6a;
+}
+

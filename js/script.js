@@ -24,3 +24,21 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error fetching the posts:', error));
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const contactForm = document.getElementById("contact-form");
+    
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        const formData = new FormData(contactForm);
+        
+        console.log("Name:", formData.get("name"));
+        console.log("Email:", formData.get("email"));
+        console.log("Message:", formData.get("message"));
+        
+        alert("Your message has been sent!");
+        
+        contactForm.reset();
+    });
+});

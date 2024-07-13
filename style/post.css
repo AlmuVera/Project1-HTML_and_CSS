@@ -1,8 +1,9 @@
 /* post */
 
-.post-image{
+#post-image{
     width: 100%;
-    height: auto;
+    max-height: 300px; 
+    object-fit: cover;
 }
 
 ul {
@@ -29,6 +30,7 @@ li{
     font-size: 16px;
     text-align: center;
     margin-bottom: 50px;
+    text-decoration: none;
     cursor: pointer; 
 }
 
@@ -38,6 +40,7 @@ li{
 }
 .post-buttons{
     text-align: center;
+    margin-bottom: 30px;
 }
     
 
@@ -56,7 +59,6 @@ li{
 
 }
 
-
 @media (min-width: 768px) {
     .post-container{
         padding: 50px 200px
@@ -65,9 +67,7 @@ li{
     li{
         text-align: center;
     }
-    
 
-   
   }
 @media (max-width: 767px) {
     .post-container{
@@ -75,7 +75,8 @@ li{
     } 
     .post-image{
         width: 100%;
-        height: auto;
+        height: 300px;
+        object-fit: cover;
     }
     .post-title{
         font-size: 25px;

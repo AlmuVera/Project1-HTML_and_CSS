@@ -18,6 +18,7 @@ main {
 }
 .cards-intro{
   padding: 10px 50px 10px 50px;
+  text-align: justify;
 }
 
 .card img {

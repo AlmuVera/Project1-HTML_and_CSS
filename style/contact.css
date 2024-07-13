@@ -2,7 +2,8 @@
 .contact-section{
     display: grid;
     margin: auto;
-    max-width: 400px ;
+    max-width: 400px;
+    margin-bottom: 50px;
 }
 .imput-contact-form{
     padding: 10px 30px;
@@ -11,13 +12,14 @@
 .contact-section button{
     margin-bottom: 20px;
 }
-
   
 .go-back-link{
     color: #f08e80;
     font-size: 16px;
     text-decoration: none;
+    text-align: center;
 }
+
 .go-back-link:hover{
     color: #e07b6a;
 }

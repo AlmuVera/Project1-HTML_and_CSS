@@ -45,6 +45,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else {
                     console.warn('No preparation details found for this post');
                 }
+
+                // Actualiza las URLs de los enlaces para compartir en redes sociales
+                const postUrl = window.location.href;
+                document.getElementById("twitter-share").href = "https://twitter.com/intent/tweet?url=" + encodeURIComponent(postUrl);
+                document.getElementById("facebook-share").href = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(postUrl);
+                document.getElementById("linkedin-share").href = "https://www.linkedin.com/shareArticle?mini=true&url=" + encodeURIComponent(postUrl);
             } else {
                 console.error('Post not found');
                 document.getElementById('post-title').textContent = 'Post not found';

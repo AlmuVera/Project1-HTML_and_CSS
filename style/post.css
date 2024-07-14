@@ -1,6 +1,6 @@
 /* post */
 
-#post-image{
+.post-image{
     width: 100%;
     max-height: 300px; 
     object-fit: cover;
@@ -42,7 +42,14 @@ li{
     text-align: center;
     margin-bottom: 30px;
 }
-    
+.icon-sharing{
+    font-size: 50px;
+    padding: 0 20px 40px;
+    color: #f08e80;
+}
+.icon-sharing:hover{
+    color: #e07b6a;
+} 
 
 @media (min-width: 950px) {
     .post-ingredients{
@@ -61,7 +68,7 @@ li{
 
 @media (min-width: 768px) {
     .post-container{
-        padding: 50px 200px
+        padding: 50px 200px 10px;
     }
     
     li{
